@@ -6,44 +6,59 @@
     android:layout_height="match_parent"
     tools:context=".RegisterActivity">
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="14dp"
-        android:layout_marginTop="47dp"
-        android:text="LOGIN"
-        app:layout_constraintStart_toEndOf="@+id/button3"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword2" />
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:layout_height="729dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
 
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="70dp"
-        android:text="REGISTER"
-        app:layout_constraintBaseline_toBaselineOf="@+id/button2"
-        app:layout_constraintStart_toStartOf="parent" />
+        <EditText
+            android:id="@+id/edtUsername"
+            android:layout_width="380dp"
+            android:layout_height="60dp"
+            android:ems="10"
+            android:hint="Enter Username"
+            android:inputType="textPersonName" />
 
-    <EditText
-        android:id="@+id/editTextTextEmailAddress2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="195dp"
-        android:layout_marginEnd="16dp"
-        android:ems="10"
-        android:inputType="textEmailAddress"
-        app:layout_constraintEnd_toEndOf="@+id/editTextTextPassword2"
-        app:layout_constraintTop_toTopOf="parent" />
+        <EditText
+            android:id="@+id/edtPhone"
+            android:layout_width="380dp"
+            android:layout_height="60dp"
+            android:ems="10"
+            android:hint="Enter Phone Number"
+            android:inputType="phone" />
 
-    <EditText
-        android:id="@+id/editTextTextPassword2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:ems="10"
-        android:inputType="textPassword"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress2" />
+        <EditText
+            android:id="@+id/edtEmail"
+            android:layout_width="380dp"
+            android:layout_height="60dp"
+            android:ems="10"
+            android:hint="Enter Email"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/edtPass"
+            android:layout_width="380dp"
+            android:layout_height="60dp"
+            android:ems="10"
+            android:hint="Enter Password"
+            android:inputType="textPassword" />
+
+        <EditText
+            android:id="@+id/edtConfPass"
+            android:layout_width="380dp"
+            android:layout_height="60dp"
+            android:ems="10"
+            android:hint="Confirm Password"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/btnCreate"
+            android:layout_width="380dp"
+            android:layout_height="60dp"
+            android:text="CREATE ACCOUNT" />
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
