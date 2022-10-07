@@ -22,7 +22,7 @@
         tools:ignore="MissingConstraints">
 
         <EditText
-            android:id="@+id/editTextTextEmailAddress"
+            android:id="@+id/emailedt"
             android:layout_width="380dp"
             android:layout_height="60dp"
             android:ems="10"
@@ -30,7 +30,7 @@
             android:inputType="textEmailAddress" />
 
         <EditText
-            android:id="@+id/edtPassword"
+            android:id="@+id/edt_pass"
             android:layout_width="380dp"
             android:layout_height="60dp"
             android:ems="10"
@@ -38,7 +38,7 @@
             android:inputType="textPassword" />
 
         <Button
-            android:id="@+id/button13"
+            android:id="@+id/btn_login"
             android:layout_width="380dp"
             android:layout_height="60dp"
             android:text="LOGIN" />
